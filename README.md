@@ -23,11 +23,8 @@ This project is part of my Android Development journey, where I learn concepts b
 
 ## Screenshots
 
-> Add your latest app screenshot here.
 
-```markdown
 ![Health Journal Home](screenshots/home.png)
-```
 
 ## Progress Tracker
 
