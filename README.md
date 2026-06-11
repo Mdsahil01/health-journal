@@ -24,7 +24,7 @@ This project is part of my Android Development journey, where I learn concepts b
 ## Screenshots
 
 
-![Health Journal Home]
+### Health Journal Home
 <p align="center">
 <img src="screenshots/home.png" width="300"/>
 </p>
