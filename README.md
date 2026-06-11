@@ -7,15 +7,58 @@ This project is part of my Android Development journey, where I learn concepts b
 ## Current Features
 
 - Welcome Screen
-- Symptom Input Field
+- Symptom Input using OutlinedTextField
 - Add Symptom Button
 - Basic State Management using Jetpack Compose
+- Display Last Saved Symptom
+- Real-time UI Updates with Compose State
 
 ## Tech Stack
 
 - Kotlin
 - Jetpack Compose
 - Android Studio
+- Git
+- GitHub
+
+## Screenshots
+
+> Add your latest app screenshot here.
+
+```markdown
+![Health Journal Home](screenshots/home.png)
+```
+
+## Progress Tracker
+
+### Completed
+
+- [x] Android Project Setup
+- [x] Welcome Screen
+- [x] TextField
+- [x] OutlinedTextField
+- [x] Button
+- [x] State Management with `mutableStateOf`
+- [x] Save and Display Last Symptom
+- [x] GitHub Repository Setup
+- [x] First Commits and Version Control
+
+### In Progress
+
+- [ ] Symptom History
+- [ ] Multiple Symptom Storage
+- [ ] Better UI Layout and Padding
+
+### Planned
+
+- [ ] Navigation
+- [ ] Room Database
+- [ ] MVVM Architecture
+- [ ] Retrofit Integration
+- [ ] Hilt Dependency Injection
+- [ ] Android Testing
+- [ ] Android FHIR SDK
+- [ ] Health Record Management
 
 ## Learning Objectives
 
@@ -35,21 +78,50 @@ Through this project, I aim to learn and implement:
 
 ## Project Roadmap
 
-### Version 0.1
+### Version 0.1 (Current)
 
 - Welcome Screen
 - Symptom Input
 - Add Symptom Button
+- Save and Display Last Symptom
+
+### Version 0.2
+
+- Multiple Symptom Storage
+- Symptom History Display
+- Improved UI Design
 
 ### Future Versions
 
-- Symptom History
-- Multiple Screens
-- Local Data Storage with Room
+- Navigation Between Screens
+- Local Storage with Room
 - API Integration
 - MVVM Architecture
+- User Authentication
 - Health Record Management
 - FHIR-Based Healthcare Features
+
+## What I Learned So Far
+
+### Day 1
+
+- Kotlin Fundamentals
+- Jetpack Compose Text
+- TextField
+- Button
+- Basic State Management
+- Android Project Structure
+- GitHub Repository Setup
+
+### Day 2
+
+- OutlinedTextField
+- State Updates in Compose
+- Displaying Dynamic Data on Screen
+- Git Commit vs Push
+- Resolving a Non-Fast-Forward Git Conflict
+- Exploring Production Android Projects
+- Exploring Open Source Android Repositories
 
 ## Why This Project?
 
@@ -63,11 +135,11 @@ This project is part of a long-term journey to build technology solutions that s
 
 ## Connect With Me
 
-- GitHub: [Mdsahil01](https://github.com/Mdsahil01)
-- LinkedIn: [mdsahil01](https://linkedin.com/in/mdsahil01)
+- GitHub: https://github.com/Mdsahil01
+- LinkedIn: https://linkedin.com/in/mdsahil01
 
 ## Project Status
 
 🚧 Currently under active development as part of my Android Development learning journey.
 
-Every new concept learned will be implemented in this project and documented through GitHub commits.
+Every new concept learned is implemented in this project and documented through GitHub commits.
