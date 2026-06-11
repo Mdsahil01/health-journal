@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
@@ -42,20 +43,25 @@ fun home() {
         )
         val symptoms = mutableListOf<String>()
         var symptom by remember { mutableStateOf("")  }
-            TextField(
-            value = symptom,
-            onValueChange = { symptom = it } ,
-//          label =   { Text(text = "Enter Symptom") },
-             placeholder = {Text(text = "Enter Symptom")}
-            )
+        var savedSymptom by remember { mutableStateOf("") }
+
+        OutlinedTextField(
+        value = symptom,
+        onValueChange = { symptom = it } ,
+          label =   { Text(text = "Enter Symptom") },
+
+        )
         Button(
             onClick = {
-                symptoms.add(symptom)
-                symptom = "Added"
+                savedSymptom = symptom
+                symptom = ""
             }
         ) {
             Text(text="Add Symptom")
         }
+        Text(
+            text = "Last Saved Symptom: $savedSymptom"
+        )
     }
 }
 
