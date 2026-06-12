@@ -1,17 +1,24 @@
- # Health Journal
+# Health Journal
 
 A healthcare-focused Android learning project built with Kotlin and Jetpack Compose.
 
-This project is part of my Android Development journey, where I learn concepts by building real applications instead of only following tutorials. The goal is to gradually evolve this project from a simple symptom tracker into a production-ready healthcare application.
+This project is part of my Android Development journey, where I learn Android concepts by building real applications instead of only following tutorials. The goal is to gradually evolve this project from a simple symptom tracker into a production-ready healthcare application.
+
+---
 
 ## Current Features
 
 - Welcome Screen
 - Symptom Input using OutlinedTextField
 - Add Symptom Button
-- Basic State Management using Jetpack Compose
-- Display Last Saved Symptom
+- Save and Display Last Saved Symptom
+- Multiple Symptom Storage
+- Dynamic Symptom List
 - Real-time UI Updates with Compose State
+- Symptom Counter
+- Row, Column, and Box Layouts
+
+---
 
 ## Tech Stack
 
@@ -21,13 +28,26 @@ This project is part of my Android Development journey, where I learn concepts b
 - Git
 - GitHub
 
+---
+
 ## Screenshots
 
+### Day 3 - Symptom List with Layout Components
 
-### Health Journal Home
 <p align="center">
-<img src="screenshots/home.png" width="300"/>
+  <img src="screenshots/day3_symptom_list_layouts.png" width="300"/>
 </p>
+
+Features demonstrated:
+
+- Column Layout
+- Row Layout
+- Box Layout
+- Dynamic Symptom List
+- State Management with `mutableStateListOf`
+- Automatic Symptom Counter
+
+---
 
 ## Progress Tracker
 
@@ -40,14 +60,22 @@ This project is part of my Android Development journey, where I learn concepts b
 - [x] Button
 - [x] State Management with `mutableStateOf`
 - [x] Save and Display Last Symptom
+- [x] Multiple Symptom Storage
+- [x] Dynamic Symptom List
+- [x] Column Layout
+- [x] Row Layout
+- [x] Box Layout
+- [x] Symptom Counter
 - [x] GitHub Repository Setup
 - [x] First Commits and Version Control
+- [x] README Documentation
+- [x] Project Screenshots
 
 ### In Progress
 
-- [ ] Symptom History
-- [ ] Multiple Symptom Storage
-- [ ] Better UI Layout and Padding
+- [ ] Better UI Design
+- [ ] Improved Padding and Spacing
+- [ ] Symptom History Improvements
 
 ### Planned
 
@@ -59,6 +87,8 @@ This project is part of my Android Development journey, where I learn concepts b
 - [ ] Android Testing
 - [ ] Android FHIR SDK
 - [ ] Health Record Management
+
+---
 
 ## Learning Objectives
 
@@ -76,30 +106,39 @@ Through this project, I aim to learn and implement:
 - Healthcare App Development
 - Android FHIR SDK
 
+---
+
 ## Project Roadmap
 
-### Version 0.1 (Current)
+### Version 0.1
 
 - Welcome Screen
 - Symptom Input
 - Add Symptom Button
 - Save and Display Last Symptom
 
-### Version 0.2
+### Version 0.2 (Current)
 
 - Multiple Symptom Storage
+- Dynamic Symptom List
 - Symptom History Display
-- Improved UI Design
+- Symptom Counter
+- Row Layout
+- Column Layout
+- Box Layout
 
 ### Future Versions
 
 - Navigation Between Screens
-- Local Storage with Room
-- API Integration
+- Local Storage with Room Database
 - MVVM Architecture
+- API Integration using Retrofit
+- Dependency Injection using Hilt
 - User Authentication
 - Health Record Management
 - FHIR-Based Healthcare Features
+
+---
 
 ## What I Learned So Far
 
@@ -118,14 +157,33 @@ Through this project, I aim to learn and implement:
 - OutlinedTextField
 - State Updates in Compose
 - Displaying Dynamic Data on Screen
-- Git Commit vs Push
+- Git Commit vs Git Push
 - Resolving a Non-Fast-Forward Git Conflict
 - Exploring Production Android Projects
 - Exploring Open Source Android Repositories
 
+### Day 3
+
+- Kotlin Lists in a Real Project
+- `mutableStateListOf`
+- Column Layout
+- Row Layout
+- Box Layout
+- Dynamic UI Rendering
+- Displaying Multiple Items from a List
+- Building Data-Driven Screens in Jetpack Compose
+
+---
+
 ## Why This Project?
 
-Healthcare and AI are areas that deeply interest me. This project serves as a practical learning platform where I can apply Android development concepts while moving toward building healthcare-focused technology solutions.
+Healthcare and AI are areas that deeply interest me.
+
+This project serves as a practical learning platform where I can apply Android development concepts while moving toward building healthcare-focused technology solutions.
+
+Every new concept I learn is implemented in this project and documented through GitHub commits.
+
+---
 
 ## About the Author
 
@@ -133,13 +191,17 @@ Healthcare and AI are areas that deeply interest me. This project serves as a pr
 
 This project is part of a long-term journey to build technology solutions that solve real-world challenges in healthcare and education.
 
+---
+
 ## Connect With Me
 
 - GitHub: https://github.com/Mdsahil01
 - LinkedIn: https://linkedin.com/in/mdsahil01
 
+---
+
 ## Project Status
 
 🚧 Currently under active development as part of my Android Development learning journey.
 
-Every new concept learned is implemented in this project and documented through GitHub commits.
+Every new concept learned is implemented in this project, committed to GitHub, and documented through project updates.
