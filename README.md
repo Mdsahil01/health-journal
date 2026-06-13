@@ -16,7 +16,12 @@ This project is part of my Android Development journey, where I learn Android co
 - Dynamic Symptom List
 - Real-time UI Updates with Compose State
 - Symptom Counter
-- Row, Column, and Box Layouts
+- Row Layout
+- Column Layout
+- Box Layout
+- Modifier-Based UI Improvements
+- Rounded Corner UI Components
+- Responsive Layout using `fillMaxWidth()`
 
 ---
 
@@ -32,10 +37,10 @@ This project is part of my Android Development journey, where I learn Android co
 
 ## Screenshots
 
-### Day 3 - Symptom List with Layout Components
+### Day 4 - Modifier-Based UI Improvements
 
 <p align="center">
-  <img src="screenshots/day3_symptom_list_layouts.png" width="300"/>
+  <img src="screenshots/day4_modifiers_ui_upgrade.png" width="300"/>
 </p>
 
 Features demonstrated:
@@ -43,6 +48,12 @@ Features demonstrated:
 - Column Layout
 - Row Layout
 - Box Layout
+- `Modifier.fillMaxWidth()`
+- `Modifier.padding()`
+- `Modifier.background()`
+- `Modifier.border()`
+- `RoundedCornerShape`
+- Content Alignment
 - Dynamic Symptom List
 - State Management with `mutableStateListOf`
 - Automatic Symptom Counter
@@ -66,6 +77,13 @@ Features demonstrated:
 - [x] Row Layout
 - [x] Box Layout
 - [x] Symptom Counter
+- [x] `Modifier.fillMaxWidth()`
+- [x] `Modifier.padding()`
+- [x] `Modifier.background()`
+- [x] `Modifier.border()`
+- [x] `RoundedCornerShape`
+- [x] Content Alignment
+- [x] UI Improvements with Modifiers
 - [x] GitHub Repository Setup
 - [x] First Commits and Version Control
 - [x] README Documentation
@@ -115,7 +133,7 @@ Through this project, I aim to learn and implement:
 - Welcome Screen
 - Symptom Input
 - Add Symptom Button
-- Save and Display Last Symptom
+- Save and Display Last Saved Symptom
 
 ### Version 0.2 (Current)
 
@@ -126,6 +144,7 @@ Through this project, I aim to learn and implement:
 - Row Layout
 - Column Layout
 - Box Layout
+- Modifier-Based UI Improvements
 
 ### Future Versions
 
@@ -173,6 +192,19 @@ Through this project, I aim to learn and implement:
 - Displaying Multiple Items from a List
 - Building Data-Driven Screens in Jetpack Compose
 
+### Day 4
+
+- Jetpack Compose Modifiers
+- `fillMaxWidth()`
+- `padding()`
+- `background()`
+- `border()`
+- `RoundedCornerShape`
+- `contentAlignment`
+- `horizontalArrangement`
+- Building Cleaner and More Professional UI
+- Applying UI Design Principles to a Real Project
+
 ---
 
 ## Why This Project?
@@ -187,7 +219,7 @@ Every new concept I learn is implemented in this project and documented through 
 
 ## About the Author
 
-**Sahil** is a B.Tech Computer Science student, aspiring software engineer, and future tech entrepreneur interested in AI, robotics, healthcare innovation, and Android development.
+**Mohammed Sahil** is a B.Tech Computer Science student, aspiring software engineer, and future tech entrepreneur interested in AI, robotics, healthcare innovation, and Android development.
 
 This project is part of a long-term journey to build technology solutions that solve real-world challenges in healthcare and education.
 
