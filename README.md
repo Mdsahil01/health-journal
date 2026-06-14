@@ -9,9 +9,12 @@ This project is part of my Android Development journey, where I learn Android co
 ## Current Features
 
 - Welcome Screen
+- Health Journal Branding
+- Custom Health Journal Logo
 - Symptom Input using OutlinedTextField
 - Add Symptom Button
 - Save and Display Last Saved Symptom
+- Medical Icon for Symptom Status
 - Multiple Symptom Storage
 - Dynamic Symptom List
 - Real-time UI Updates with Compose State
@@ -22,6 +25,8 @@ This project is part of my Android Development journey, where I learn Android co
 - Modifier-Based UI Improvements
 - Rounded Corner UI Components
 - Responsive Layout using `fillMaxWidth()`
+- Images from Drawable Resources
+- Material Icons
 
 ---
 
@@ -37,23 +42,22 @@ This project is part of my Android Development journey, where I learn Android co
 
 ## Screenshots
 
-### Day 4 - Modifier-Based UI Improvements
+### Day 5 - Images, Icons & App Branding
 
 <p align="center">
-  <img src="screenshots/day4_modifiers_ui_upgrade.png" width="300"/>
+  <img src="screenshots/day5_images_icons_ui.png" width="300"/>
 </p>
 
 Features demonstrated:
 
+- Custom Health Journal Logo
+- Material Icons
+- Images from Drawable Resources
+- App Branding
 - Column Layout
 - Row Layout
 - Box Layout
-- `Modifier.fillMaxWidth()`
-- `Modifier.padding()`
-- `Modifier.background()`
-- `Modifier.border()`
-- `RoundedCornerShape`
-- Content Alignment
+- Modifier-Based UI Improvements
 - Dynamic Symptom List
 - State Management with `mutableStateListOf`
 - Automatic Symptom Counter
@@ -84,6 +88,11 @@ Features demonstrated:
 - [x] `RoundedCornerShape`
 - [x] Content Alignment
 - [x] UI Improvements with Modifiers
+- [x] Images in Jetpack Compose
+- [x] Icons in Jetpack Compose
+- [x] Drawable Resources
+- [x] Custom App Logo
+- [x] App Branding
 - [x] GitHub Repository Setup
 - [x] First Commits and Version Control
 - [x] README Documentation
@@ -145,6 +154,9 @@ Through this project, I aim to learn and implement:
 - Column Layout
 - Box Layout
 - Modifier-Based UI Improvements
+- Custom App Logo
+- Material Icons
+- App Branding
 
 ### Future Versions
 
@@ -204,6 +216,17 @@ Through this project, I aim to learn and implement:
 - `horizontalArrangement`
 - Building Cleaner and More Professional UI
 - Applying UI Design Principles to a Real Project
+
+### Day 5
+
+- Images in Jetpack Compose
+- Icons in Jetpack Compose
+- Drawable Resources
+- Loading Images from Resources
+- Material Icons
+- App Branding Basics
+- Combining Images, Icons and Layouts
+- Building a More Professional UI
 
 ---
 
