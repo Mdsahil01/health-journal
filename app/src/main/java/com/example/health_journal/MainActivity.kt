@@ -1,6 +1,7 @@
 package com.example.health_journal
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -21,11 +22,15 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -38,6 +43,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.motionEventSpy
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -59,6 +65,15 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun home() {
 
+    var symptom by remember { mutableStateOf("") }
+    var savedSymptom by remember { mutableStateOf("") }
+    val symptoms = remember { mutableStateListOf<String>() }
+    val context = LocalContext.current
+    var errorMessage by remember {
+        mutableStateOf("")
+    }
+    var showInfo by remember { mutableStateOf(false) }
+
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -76,16 +91,33 @@ fun home() {
 
             )
 
+          Row(
+              verticalAlignment = Alignment.CenterVertically,
+              horizontalArrangement = Arrangement.Center,
+              modifier = Modifier.fillMaxWidth()
+          ) {
+          Text(
+              text = "Health Journal"
+          )
+          IconButton(
+              onClick = {
+                  showInfo = !showInfo
+              }
+          )
 
+          {
+              Icon(
+                  imageVector = Icons.Default.Info,
+                  contentDescription = "Info"
+              )
+          }
+
+         }
+        if (showInfo) {
             Text(
-                text = "Health Journal"
+                text = "Health Journal v0.2\nTrack your symptoms daily."
             )
-
-
-
-
-
-
+        }
 
 
         Text(
@@ -100,9 +132,6 @@ fun home() {
 
         )
 
-        var symptom by remember { mutableStateOf("") }
-        var savedSymptom by remember { mutableStateOf("") }
-        val symptoms = remember { mutableStateListOf<String>() }
 
 
         OutlinedTextField(
@@ -112,21 +141,37 @@ fun home() {
             modifier = Modifier.fillMaxWidth()
 
             )
+
+        if (errorMessage.isNotEmpty()) {
+            Text(
+                text = errorMessage,
+                color = Color.Red
+            )
+        }
         Button(
             modifier = Modifier.fillMaxWidth(),
             onClick = {
-                if (symptom.isNotEmpty()) {
+                if (symptom.isBlank()) {
+                    errorMessage = "Please enter a symptom"
+                } else {
                     symptoms.add(symptom)
                     savedSymptom = symptom
                     symptom = ""
+                    errorMessage = ""
                 }
             }
         ) {
             Text(text = "Add Symptom")
         }
-        Text(
-            text = "Last Saved Symptom: $savedSymptom"
-        )
+
+
+        OutlinedButton(
+            onClick = {
+                symptoms.clear()
+            }
+        ) {
+            Text(text = "Clear All Symtoms")
+        }
         Box(
             modifier = Modifier.fillMaxWidth()
                 .border(1.dp,Color.Gray,
