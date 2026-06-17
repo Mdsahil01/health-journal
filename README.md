@@ -13,11 +13,15 @@ This project is part of my Android Development journey, where I learn Android co
 - Custom Health Journal Logo
 - Symptom Input using OutlinedTextField
 - Add Symptom Button
+- Outlined Clear Symptoms Button
+- Information Icon Button
+- Input Validation Messages
 - Save and Display Last Saved Symptom
 - Medical Icon for Symptom Status
 - Multiple Symptom Storage
 - Dynamic Symptom List
 - Real-time UI Updates with Compose State
+- App Information Toggle
 - Symptom Counter
 - Row Layout
 - Column Layout
@@ -42,24 +46,25 @@ This project is part of my Android Development journey, where I learn Android co
 
 ## Screenshots
 
-### Day 5 - Images, Icons & App Branding
+### Day 6 - Buttons, Icons & Validation
 
 <p align="center">
-  <img src="screenshots/day5_images_icons_ui.png" width="300"/>
+  <img src="screenshots/day6_buttons_icons_validation.png" width="300"/>
 </p>
 
 Features demonstrated:
 
-- Custom Health Journal Logo
+- Button
+- OutlinedButton
+- IconButton
+- Input Validation
+- Dynamic Error Messages
+- App Information Toggle
 - Material Icons
 - Images from Drawable Resources
-- App Branding
-- Column Layout
-- Row Layout
-- Box Layout
-- Modifier-Based UI Improvements
-- Dynamic Symptom List
+- State Management with `mutableStateOf`
 - State Management with `mutableStateListOf`
+- Dynamic Symptom List
 - Automatic Symptom Counter
 
 ---
@@ -73,12 +78,15 @@ Features demonstrated:
 - [x] TextField
 - [x] OutlinedTextField
 - [x] Button
+- [x] OutlinedButton
+- [x] IconButton
+- [x] Input Validation
 - [x] State Management with `mutableStateOf`
-- [x] Save and Display Last Symptom
+- [x] Save and Display Last Saved Symptom
 - [x] Multiple Symptom Storage
 - [x] Dynamic Symptom List
-- [x] Column Layout
 - [x] Row Layout
+- [x] Column Layout
 - [x] Box Layout
 - [x] Symptom Counter
 - [x] `Modifier.fillMaxWidth()`
@@ -93,6 +101,7 @@ Features demonstrated:
 - [x] Drawable Resources
 - [x] Custom App Logo
 - [x] App Branding
+- [x] App Information Toggle
 - [x] GitHub Repository Setup
 - [x] First Commits and Version Control
 - [x] README Documentation
@@ -157,6 +166,8 @@ Through this project, I aim to learn and implement:
 - Custom App Logo
 - Material Icons
 - App Branding
+- Input Validation
+- App Information Toggle
 
 ### Future Versions
 
@@ -227,6 +238,19 @@ Through this project, I aim to learn and implement:
 - App Branding Basics
 - Combining Images, Icons and Layouts
 - Building a More Professional UI
+
+### Day 6
+
+- Button Types in Jetpack Compose
+- Button
+- OutlinedButton
+- IconButton
+- Input Validation
+- Dynamic Error Messages
+- State-Based UI Updates
+- Information Toggle using Compose State
+- Building Interactive User Interfaces
+- Applying New Components to a Real Project
 
 ---
 
